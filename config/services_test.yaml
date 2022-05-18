@@ -1,0 +1,14 @@
+# services:
+#   _defaults:
+#     autowire: true
+#     autoconfigure: true
+#     public: true
+#
+#   App\Tests\Mock\MockHttpClientApi: ~
+#
+#   App\Service\GetBeerActionService.test:
+#     class: App\Service\GetBeerActionService
+#     decorates: App\Service\GetBeerActionService
+#     bind:
+#       $httpClient: '@App\Tests\Mock\MockHttpClientApi'
+

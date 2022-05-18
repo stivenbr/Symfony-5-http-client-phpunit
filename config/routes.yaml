@@ -1,0 +1,11 @@
+api_beers_list:
+    path: /api/v1/beers
+    controller: App\Controller\GetListBeersAction
+    methods: [GET]
+
+api_beers_show:
+    path: /api/v1/beers/{id}
+    controller: App\Controller\GetBeerAction
+    methods: [GET]
+    requirements:
+        id: '\d+'
